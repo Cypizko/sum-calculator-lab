@@ -55,9 +55,8 @@
             }
 
             try {
-                const serverUrl = 'https://sum-calculator-lab.onrender.com/';
-                // Формирование URL с query-параметрами
-                const url = `https://sum-calculator-lab.onrender.com/`;
+                // Добавьте /sum после адреса сайта
+                const url = `https://sum-calculator-lab.onrender.com/sum?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`;
                 // Выполнение GET-запроса к серверу
                 const response = await fetch(url);
                 // Парсинг ответа в формате JSON
@@ -83,4 +82,5 @@
 </body>
 
 </html>
+
 
